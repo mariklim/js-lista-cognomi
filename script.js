@@ -6,8 +6,10 @@
 
 var listaCognomi = ["Bianchi", "Neri", "Rossi", "Verdi", "Gialli"];
 var cognomeUtente = prompt("Inserisci il tuo cognome");
-listaCognomi.push(cognomeUtente);
+listaCognomi.push(cognomeUtente.toUpperCase());
 listaCognomi.sort();
-console.log(listaCognomi);
 
+for (var i=0; i<listaCognomi.length; i++){
+    console.log(i + 1 + " " + ( listaCognomi[i]))
+}
 
